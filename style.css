@@ -1,88 +1,287 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-:root{
+
+:root {
     --purple500: #281154;
     --purple300: #270082;
     --purple600: #1b0058;
     --red600: #dc0000;
     --body: #f9f6ff;
 }
-*{
-    margin:0;
-    padding:0;
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-html, body{
+
+html,
+body {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     line-height: 1.4;
     scroll-behavior: smooth;
 }
-ul{
+
+ul {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
-.container{
+
+.container {
     max-width: 1100px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 /* Header Section  */
 
-header{
+header {
     background-color: var(--purple300);
     position: sticky;
-    top:0;
+    top: 0;
     z-index: 100;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
-.nav{
+
+.nav {
     display: flex;
     justify-content: space-between;
-    color:white;
+    color: white;
     align-items: center;
-    padding:20px 0;
+    padding: 20px 0;
 }
-.logo{
-    font-size:32px;
+
+.logo {
+    font-size: 32px;
     font-weight: 600;
 }
-.nav ul{
+
+.nav ul {
     display: flex;
-    gap:20px;
+    gap: 20px;
 }
-.nav ul li{
+
+.nav ul li {
     border-bottom: 2px solid transparent;
     transition: 0.2s ease-in;
 }
-.nav ul li:hover{
+
+.nav ul li:hover {
     border-bottom: 2px solid white;
 }
 
 /* Hero Section start */
 
-.hero-section{
+.hero-section {
     background-image: url("images/hero_image.png");
-    height:100vh;
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    color:white;
+    color: white;
     display: grid;
     place-items: center;
     text-align: center;
 }
-.hero-section .container{
+
+.hero-section .container {
     display: flex;
     flex-direction: column;
-    gap:30px;
+    gap: 30px;
 }
-.hero-section h1{
-    font-size:6rem;
+
+.hero-section h1 {
+    font-size: 6rem;
 }
-.hero-section h3{
-    font-size:2rem;
+
+.hero-section h3 {
+    font-size: 2rem;
 }
 
 /* Hero Section End */
+
+/* Music Section start */
+
+.music-section {
+    background-color: var(--purple500);
+}
+
+.music-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.ipad-iphone-img {
+    margin-top: -400px;
+    position: relative;
+    top: 400px;
+}
+
+.music-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.music-section h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.music-section h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.music-section .primary-btn {
+    font-size: 18px;
+    font-weight: 300;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    background-color: #DC0000;
+    transition: 0.2s ease-in-out;
+}
+
+.music-section .primary-btn:hover {
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+
+.music-section p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+
+/* Music Section End */
+
+/* About Music Start  */
+
+.about-music {
+    padding-top: 31.25rem;
+    display: grid;
+    place-items: center;
+    gap: 50px;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.secondary-btn {
+    background-color: var(--purple300);
+    color: #FFFFFF;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.2s ease-in-out;
+}
+
+.secondary-btn:hover {
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+
+.about-music h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.about-music p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #000;
+}
+
+/* About Music End */
+
+/* Video Section Start  */
+
+.video-section {
+    background-image: url("images/video.png");
+    background-size: cover;
+    height: 80vh;
+    margin-bottom: 5rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.video-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -150px;
+}
+
+.video-section h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.video-section h4 {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0 10rem;
+}
+
+.hero-section,
+.video-section {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Video Section End */
+
+/* Gift Card Start  */
+
+.gift-section {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    gap: 50px;
+  }
+  
+  .gift-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer-upper {
+    background-color: var(--purple600);
+    padding: 20px;
+  }
+  .footer-upper .container {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+  }
+  
+  .footer-upper h4 {
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+  }
+  .footer-lower {
+    background-color: var(--purple300);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  
+  .gift-section {
+    scroll-margin: 120px;
+  }
+
